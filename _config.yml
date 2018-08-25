@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: GuKey Blog
-subtitle: 谷晶博客
-description: 谷晶 博客 java 技术 开发 后端 
+title: Gukey's Blog
+subtitle: 谷晶
+description: the high sky, the far road, <br> but runing with gentle breeze
 keywords: 谷晶 博客 java 技术 开发 后端
-author: GuKey
-language: zh_CN
+author: Gukey
+language: zh-Hans
 timezone:
 
 # URL
@@ -74,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: aria
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -83,18 +83,23 @@ deploy:
   repository: git@github.com:GuGuKit/GuGuKit.github.io.git
   branch: master
 
-# the config of themes/aria
-# Hexo local search
+
+# the config of themes/next
+# 多说评论系统
+duoshuo:
+  enable: true
+  shortname: your-duoshuo-shortname
+# 菜单配置
+menu:
+  home: /
+  archives: /archives
+  about: /about
+  categories: /categories
+  tags: /tags
+  #commonweal: /404.html
+# 本地搜索
 search:
   path: search.xml
-  field: all
-# Hexo feed
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-# aria config end
+  field: post
+  format: html
+  limit: 10000
